@@ -16,8 +16,8 @@ switch (htmlspecialchars($_GET['action'])) {
             "maxSize" => $CONFIG['imageMaxSize'],
             "allowFiles" => $CONFIG['imageAllowFiles']
         );
-        $fieldName = $CONFIG['imageFieldName'];
         $watermark = $CONFIG['iswatermark'];
+        $fieldName = $CONFIG['imageFieldName'];
         break;
     case 'uploadscrawl':
         $config = array(

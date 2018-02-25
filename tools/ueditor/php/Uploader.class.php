@@ -126,6 +126,10 @@ class Uploader
         } else { //移动成功
             $this->stateInfo = $this->stateMap[0];
         }
+
+        if( $this->water ){
+            $this->watermark($this->filePath,$this->filePath);
+        }
     }
 
     /**
